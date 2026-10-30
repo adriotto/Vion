@@ -70,7 +70,7 @@ jobs:
             cmake_preset: macos-ninja
 
           - os: macos-ios
-            runs_on: macos-14
+            runs_on: macos-latest
             cache_path: ~/Library/Caches/ccache
             extra_cmake_args: -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_OSX_SYSROOT=iphoneos -DCMAKE_OSX_ARCHITECTURES="arm64" -DFORCE_BUILD_OPENSSL_MAC=ON
             cmake_preset: macos-ninja
