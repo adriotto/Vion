@@ -1,7 +1,9 @@
 name: C/C++ CI
 
 on:
+  workflow_dispatch:
   push:
+    branches: [ "*" ]
     paths-ignore:
       - '**/*.md'
   pull_request:
